@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+<h2>Share your secrets with us!</h2>
+
+<form action="/createPost" method="POST">
+    <textarea type="text" placeholder="Name of recipe" name="title"></textarea>
+    <textarea type="text" placeholder="Recipe" name="recipe"></textarea>
+    <input type="submit" value="posteaza reteta!">
+</form>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+
+
+<div class="recipe-container">
+<% if(locals.blogPosts) {%>
+    <%for(i=0; i < blogPosts.length; i++){%>
+        <div class="post-button">
+        <div class="recipe">
+            <form action="/delete" method="POST" >
+        <input type="submit"  name="<%= i %>" value="delete"></form>
+        
+        
+        <form action="/edit" method="POST" >
+            <input type="submit"  name="<%= i %>" value="edit"></form>
+    
+    </div>
+        <h3><%= blogPosts[i].title %></h3>
+        <p><%= blogPosts[i].recipe %></p>
+        <p><%= blogPosts[i].id%></p>
+    </div>
+        <%}%>
+   
+<%} else {%>
+    <p>There are no recipes yet, be the first one to post!</p>
+    <% } %>
+
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
