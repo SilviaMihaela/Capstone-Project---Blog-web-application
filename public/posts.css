@@ -1,10 +1,43 @@
 .recipe-container {
+    width: 90%;
+    height: 45rem;
+    padding: 10px;
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: rgb(242, 235, 226);
+    box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.59);
 }
 
 .recipe {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    border: 3px black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    margin: 20px;
+    box-shadow: 10px 10px 30px -2px rgba(0,0,0,0.59);
+    width: 30vh;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.action-button {
+    margin: 5px;
+   
+
+}
+
+.action-button:hover {
+ cursor: pointer;
+ box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.59);
 }

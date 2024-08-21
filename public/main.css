@@ -1,7 +1,19 @@
-body{
+body {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(34, 38%, 92%, 1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='1' stroke='hsla(34, 25%, 82%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 .dont-show {
     visibility: hidden;
+}
+h1{
+    margin-left: 10px;
 }
 
 .nav{
@@ -10,14 +22,34 @@ body{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 8px 11px 10px -5px rgba(0,0,0,0.59);
+    width: 100%;
+    background-color: #F2EBE2;
+    
 }
 
 .navbar {
     list-style-type: none;
+
 }
 
 .nav-link {
     text-decoration: none;
+    width: 50px;
 }
+
+.button {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px black;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.59);
+    margin-right: 10px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.59);
+}
+
 
 

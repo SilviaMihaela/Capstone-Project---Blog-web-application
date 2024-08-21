@@ -3,18 +3,19 @@
 
 
 <div class="recipe-container">
+    <!--create posts for every item in blogPosts array -->
 <% if(locals.blogPosts) {%>
     <%for(i=0; i < blogPosts.length; i++){%>
-        <div class="post-button">
+        <!--delete button -->
         <div class="recipe">
+            <div class="action-buttons">
             <form action="/delete" method="POST" >
-        <input type="submit"  name="<%= i %>" value="delete"></form>
+        <input class="action-button" type="submit"  name="<%= i %>" value="delete"></form>
         
-        
+        <!-- edit button -->
         <form action="/edit" method="POST" >
-            <input type="submit"  name="<%= i %>" value="edit"></form>
-    
-    </div>
+            <input class="action-button" type="submit"  name="<%= i %>" value="edit"></form>
+        </div>
         <h3><%= blogPosts[i].title %></h3>
         <p><%= blogPosts[i].recipe %></p>
     </div>

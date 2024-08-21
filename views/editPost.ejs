@@ -1,12 +1,16 @@
 <%- include("partials/header.ejs") %>
 
-<h2>Edit your post!</h2>
 
+<!-- editing form - takes initial values and lets the user edit and save -->
+<div class="input-div">
+<h2>Edit your post!</h2>
+<div class="form">
 <form action="/saveEdit" method="POST">
     <textarea type="text" placeholder="Name of recipe" name="title"><%= posts[index].title %></textarea>
     <textarea type="text" placeholder="Recipe" name="recipe"><%= posts[index].recipe %></textarea>
-    <textarea class="dont-show" type="text" name="index"> <%=index%></textarea>
-    <input type="submit" value="Salveaza modificarile">
-</form>
+    <input class="action-button" type="submit" value="Salveaza modificarile">
+    <textarea class="dont-show" type="text" name="index"><%=index%></textarea>
+</form></div>
+</div>
 
 <%- include("partials/footer.ejs") %>

@@ -1,11 +1,15 @@
 <%- include("partials/header.ejs") %>
 
-<h2>Share your secrets with us!</h2>
 
+<!-- create new post form -->
+<div class="input-div">
+<h2>Post your new recipe! </h2>
+<div class="form">
 <form action="/createPost" method="POST">
     <textarea type="text" placeholder="Name of recipe" name="title"></textarea>
     <textarea type="text" placeholder="Recipe" name="recipe"></textarea>
-    <input type="submit" value="posteaza reteta!">
-</form>
+    <input class="action-button" type="submit" value="posteaza reteta!">
+</form></div>
+</div>
 
 <%- include("partials/footer.ejs") %>
