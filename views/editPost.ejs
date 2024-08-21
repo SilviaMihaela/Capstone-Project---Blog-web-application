@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<h2>Edit your post!</h2>
+
+<form action="/saveEdit" method="POST">
+    <textarea type="text" placeholder="Name of recipe" name="title"><%= posts[index].title %></textarea>
+    <textarea type="text" placeholder="Recipe" name="recipe"><%= posts[index].recipe %></textarea>
+    <textarea class="dont-show" type="text" name="index"> <%=index%></textarea>
+    <input type="submit" value="Salveaza modificarile">
+</form>
+
+<%- include("partials/footer.ejs") %>
